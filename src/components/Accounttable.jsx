@@ -49,7 +49,7 @@ export default function AccountTable({ data }) {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4 sm:p-6">
+    <div className="flex items-center justify-center min-h-screen p-4 pt-20 sm:p-6 ">
       <div className="w-full max-w-7xl">
         {/* Top controls */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 gap-3">
@@ -62,7 +62,7 @@ export default function AccountTable({ data }) {
               placeholder="Search..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-sky-400 w-full sm:w-auto"
+              className="border border-gray-300 rounded-lg px-3 py-2 text-sm text-black focus:outline-none focus:ring-2 focus:ring-sky-400 w-full sm:w-auto"
             />
 
             {/* Download button */}
@@ -174,7 +174,7 @@ export default function AccountTable({ data }) {
           <button
             onClick={() => setPage((p) => Math.max(p - 1, 1))}
             disabled={page === 1}
-            className="border border-gray-300 px-4 py-2 rounded-lg text-sm disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors w-full sm:w-auto"
+            className="border border-gray-300 px-4 py-2 rounded-lg text-sm text-black disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors w-full sm:w-auto"
           >
             Previous
           </button>
@@ -184,7 +184,7 @@ export default function AccountTable({ data }) {
           <button
             onClick={() => setPage((p) => Math.min(p + 1, totalPages))}
             disabled={page === totalPages || totalPages === 0}
-            className="border border-gray-300 px-4 py-2 rounded-lg text-sm disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors w-full sm:w-auto"
+            className="border border-gray-300 px-4 py-2 rounded-lg text-sm text-black disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors w-full sm:w-auto"
           >
             Next
           </button>

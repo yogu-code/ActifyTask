@@ -7,10 +7,10 @@ import { store } from "@/store/AccountStore";
 export default function ClientLayout({ children }) {
   return (
     <Provider store={store}>
-      <div className="flex min-h-screen bg-gray-50">
+      <div className=" bg-gray-50">
         <Sidebar />
-        <div className="flex-1 ml-16 sm:ml-52">
-          <main className="w-full">
+        <div className="flex-1 min-h-screen ml-0 sm:ml-52">
+          <main className="w-full ">
             {children}
           </main>
         </div>

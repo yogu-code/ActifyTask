@@ -20,7 +20,7 @@ export default function AccountForm() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen  px-4 py-6">
+    <div className="flex items-center justify-center min-h-screen  px-4  py-6">
       <div className="w-full max-w-lg bg-white p-4 sm:p-6 md:p-8 rounded-xl shadow-lg overflow-y-auto max-h-[95vh]">
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-4 sm:mb-6 text-center">
           Add Account
@@ -40,7 +40,7 @@ export default function AccountForm() {
                   message: "Account name must be at least 3 characters",
                 },
               })}
-              className="w-full border border-gray-300 rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
+              className="w-full border border-gray-300 text-black rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
               placeholder="Enter Account Name"
             />
             {errors.accountName && (
@@ -64,7 +64,7 @@ export default function AccountForm() {
                   message: "Invalid email format",
                 },
               })}
-              className="w-full border border-gray-300 rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
+              className="w-full border border-gray-300 text-black rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
               placeholder="Enter Email"
             />
             {errors.email && (
@@ -88,7 +88,7 @@ export default function AccountForm() {
                   message: "Phone number must be 10 digits",
                 },
               })}
-              className="w-full border border-gray-300 rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
+              className="w-full border border-gray-300 text-black rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
               placeholder="Enter Phone Number"
             />
             {errors.phone && (
@@ -112,7 +112,7 @@ export default function AccountForm() {
                   message: "Enter a valid website URL",
                 },
               })}
-              className="w-full border border-gray-300 rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
+              className="w-full border border-gray-300 text-black rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
               placeholder="https://example.com"
             />
             {errors.website && (
@@ -131,7 +131,7 @@ export default function AccountForm() {
               {...register("industry", {
                 required: "Industry is required",
               })}
-              className="w-full border border-gray-300 rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
+              className="w-full border border-gray-300 text-black rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
               placeholder="Enter Industry"
             />
             {errors.industry && (
@@ -150,7 +150,7 @@ export default function AccountForm() {
               {...register("status", {
                 required: "Please select an account status",
               })}
-              className="w-full border border-gray-300 rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
+              className="w-full border border-gray-300 text-black rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none"
             >
               <option value="">Select Status</option>
               <option value="Active">Active</option>
@@ -177,7 +177,7 @@ export default function AccountForm() {
                 },
               })}
               rows="3"
-              className="w-full border border-gray-300 rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none resize-none"
+              className="w-full border border-gray-300 text-black rounded-md p-2 text-sm sm:text-base focus:ring-2 focus:ring-sky-400 focus:outline-none resize-none"
               placeholder="Enter Remark"
             ></textarea>
             {errors.remark && (
@@ -190,7 +190,7 @@ export default function AccountForm() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-sky-500 text-white py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-sky-600 transition-all active:scale-95"
+            className="w-full bg-sky-500 text-white  py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-sky-600 transition-all active:scale-95"
           >
             Submit
           </button>
